@@ -4,8 +4,6 @@ A boilerplate for Jekyll with some extra functionalities provided by [Jekyll Ass
 
 If you need a simpler Jekyll boilerplate following the standard folder structure, [Jekyll Base](https://github.com/danielmcgraw/Jekyll-Base) is a good option.
 
-(<https://github.com/h5bp/html5-boilerplate>)
-
 ## Quick start
 
 1. Make sure you have `ruby 1.8.7` or higher installed:
