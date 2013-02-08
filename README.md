@@ -103,5 +103,5 @@ files.**
  - [Ruby](http://www.ruby-lang.org/en/downloads/)
  - [Jekyll](https://github.com/mojombo/jekyll): A simple, blog aware, static site generator
  - [Jekyll Assets](https://github.com/ixti/jekyll-assets/): Adds Rails-alike assets pipeline.
- - SASS
- - yui
+ - [SASS](http://sass-lang.com/download.html)
+ - [yui-compressor](https://rubygems.org/gems/yui-compressor)
