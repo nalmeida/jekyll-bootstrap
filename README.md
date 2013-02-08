@@ -36,7 +36,49 @@ If you need a simpler Jekyll boilerplate following the standard folder structure
 
 		$ jekyll --server
 	
+## Folder structure
+```
 
++- source/                         ← All source files
+  +- _assets/                      ← Assets folder (css, js, img)
+  | +- css/                        ← SASS and CSS folder
+  | | +- _config.scss              ← Commom variables for SASS. Inclued inside main.scss by default
+  | | +- main.scss                 ← Main SASS file used in all pages
+  | | +- vendor/                   ← External SASS / CSS frameworks
+  | |   +- normalize/              \  
+  | |     +- _normalize.scss       | ← Normalize CSS 2.1.0
+  | |     +- README.md             /
+  | +- js/
+  |   +- vendor/                   ← External Javascript frameworks
+  |   | +- jquery/                 \
+  |   |   +- jquery.min.js         | ← jQuery 1.9.0
+  |   |   +- README.md             /
+  |   +- main.js                   ← Main Javascript file used in all pages
+  +- _includes/                    ← Inclues folder
+  +- _plugins/                     ← Jekyll plugins folder
+  | +- jekyll-assets.rb            ← Jekyll Assets plugin configuration
+  | +- sitemap-generator.rb        ← Sitemap generator plugin configuration
+  | +- README.md
+  +- _templates/
+  | +- master.html                 ← Master template
+  | +- post.html                   ← Sample Post template
+  +- _posts/
+  | +- 1985-10-26-Test-Post.md     ← Sample Markdown post
+  +- page/                         ← Sample page content
+  | +- index.html
+  +- apple-touch-icon-114x114.png  \
+  +- apple-touch-icon-144x144.png  |
+  +- apple-touch-icon-57x57.png    | ← Fav icons
+  +- apple-touch-icon-72x72.png    |
+  +- apple-touch-icon.png          |
+  +- favicon.ico                   /
+  +- crossdomain.xml
+  +- index.html                    ← Home page content
+  +- robots.txt
++-deploy/                          ← Jekyll compiled destination folder
++-_config.yml                      ← Jekyll YAML configuration file 
+
+```
 ## Features
 
 ### Parsing assets trought Jekyll Assets Plugin
@@ -61,3 +103,5 @@ files.**
  - [Ruby](http://www.ruby-lang.org/en/downloads/)
  - [Jekyll](https://github.com/mojombo/jekyll): A simple, blog aware, static site generator
  - [Jekyll Assets](https://github.com/ixti/jekyll-assets/): Adds Rails-alike assets pipeline.
+ - SASS
+ - yui
