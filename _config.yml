@@ -1,0 +1,36 @@
+# Tips from: http://qubitlogs.com/Workflow/2013/01/22/jekyll-blogging-reference-and-perfect-workflow-guide/#.UQGFCKGLxRx
+# More tips and workflow: http://klepas.org/jekyll-a-static-site-generator/
+# All available options: https://github.com/mojombo/jekyll/blob/master/lib/jekyll.rb
+# Plug-ins: https://github.com/mojombo/jekyll/wiki/Plugins
+# Plug-in para compressão de assets: https://github.com/matthodan/jekyll-asset-pipeline
+
+# Dicas de como trabalhar com sessões: http://www.stroantree.net/blog/2012/12/06/New-Layout/
+
+
+# Jekyll 
+exclude: [deploy, README.md]
+auto: true
+permalink: /:categories/:title
+rdiscount extensions: [smart]
+
+destination: ./deploy
+source:      ./source
+plugins:     ./source/_plugins
+layouts:     _templates 
+
+baseurl:     /
+url: 		 http://localhost:4000
+
+# Custom variables and parametres
+title : SITE_TITLE
+
+# Plugin: Jekyll Assets
+# Full specification: https://github.com/ixti/jekyll-assets/
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets
+  compress:
+    js:   yui
+    css:  sass

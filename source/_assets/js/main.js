@@ -1,0 +1,1 @@
+// In order to concatenates JS files, use "//= require path/to/your/js" in the very beginning of the file.
