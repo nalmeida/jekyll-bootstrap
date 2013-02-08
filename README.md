@@ -29,7 +29,7 @@ If you need a simpler Jekyll boilerplate following the standard folder structure
 	
 4. Download or clone this repository in your folder.
 
-		$ git colne .....
+		$ git clone https://github.com/nalmeida/jekyll-bootstrap.git .
 
 	
 5. Run Jekyll
